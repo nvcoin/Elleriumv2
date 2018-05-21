@@ -1,5 +1,8 @@
 ### Usage
 
+Mandatory update >> Ver6.0.0
+
+
 To build dependencies for the current arch+OS:
 
     make
