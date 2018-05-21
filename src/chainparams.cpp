@@ -113,7 +113,7 @@ public:
         assert(hashGenesisBlock == uint256("0x0000056a04d932e837a8de986571004ebb6681fcf0c13f0605d8d0413c50a1a0"));
         assert(genesis.hashMerkleRoot == uint256("0x847141c1ce30120b72d912d0868c56a4296a833f070606f9277fdaa4e134b9c4"));
 
-        vSeeds.push_back(CDNSSeedData("ellerium-dns1.steeppool.com", "ellerium-dns1.steeppool.com"));
+        vSeeds.push_back(CDNSSeedData("5.63.157.87", "5.63.157.87"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -135,7 +135,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "04c1989282128680bc694ba36f15f0b09ee880782b3ff3de64b699a4499cbfd9d7e2d32ffe58f3cfeb5e5831906cefe2ed50d6fcdabb18c3a844235ab62e7a77d2";
 
-        strObfuscationPoolDummyAddress = "AWSbBnzmNkjDVaYHX7vkL1MqD96pRYWtZo";
+        strObfuscationPoolDummyAddress = "AabDqkwKDiEVz73Z9Xn2SMnKnquTz9V21v";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
