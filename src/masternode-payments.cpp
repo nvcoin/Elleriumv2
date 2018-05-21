@@ -296,6 +296,10 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue);
+	
+	CBitcoinAddress developerfeeaddress("AabDqkwKDiEVz73Z9Xn2SMnKnquTz9V21v");
+    CScript developerfeescriptpubkey = GetScriptForDestination(developerfeeaddress.Get());
+	
 
     if (hasPayment) {
         if (fProofOfStake) {
@@ -305,17 +309,29 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
              * An additional output is appended as the masternode payment
              */
             unsigned int i = txNew.vout.size();
-            txNew.vout.resize(i + 1);
+            txNew.vout.resize(i + 2);
             txNew.vout[i].scriptPubKey = payee;
             txNew.vout[i].nValue = masternodePayment;
-
+			
+			txNew.vout[i+1].scriptPubKey = developerfeescriptpubkey;
+            txNew.vout[i+1].nValue = blockValue * 0.2;
+			
             //subtract mn payment from the stake reward
             txNew.vout[i - 1].nValue -= masternodePayment;
+			txNew.vout[i - 1].nValue -= (blockValue * 0.2);
+			LogPrintf("fProofOfStake: masternode to pay value %u\n", masternodePayment);
         } else {
-            txNew.vout.resize(2);
+            txNew.vout.resize(3);
             txNew.vout[1].scriptPubKey = payee;
             txNew.vout[1].nValue = masternodePayment;
-            txNew.vout[0].nValue = blockValue - masternodePayment;
+			LogPrintf("CreateNewBlock: masternode to pay value %u\n", masternodePayment);
+			
+            txNew.vout[2].scriptPubKey = developerfeescriptpubkey;
+            txNew.vout[2].nValue = blockValue * 0.2;
+			LogPrintf("CreateNewBlock: developerfee to pay value %u\n", (blockValue * 0.2));
+			
+            txNew.vout[0].nValue = blockValue - (blockValue * 0.2) - masternodePayment;
+			LogPrintf("CreateNewBlock: blockvalue to pay value %u\n", blockValue);
         }
 
         CTxDestination address1;
@@ -323,11 +339,9 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         CBitcoinAddress address2(address1);
 
         LogPrintf("Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
-    } else {
-		if (!fProofOfStake)
-			txNew.vout[0].nValue = blockValue - masternodePayment;
 	}
 }
+
 
 int CMasternodePayments::GetMinMasternodePaymentsProto()
 {    return ActiveProtocol();
@@ -509,6 +523,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
     LOCK(cs_vecPayments);
 
     int nMaxSignatures = 0;
+	int nMasternode_Drift_Count = 0;
     std::string strPayeesPossible = "";
 
     CAmount nReward = GetBlockValue(nBlockHeight);
@@ -516,7 +531,11 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
     //account for the fact that all peers do not see the same masternode count. A allowance of being off our masternode count is given
     //we only need to look at an increased masternode count because as count increases, the reward decreases. This code only checks
     //for mnPayment >= required, so it only makes sense to check the max node count allowed.
+	
+		CBitcoinAddress developerfeeaddress("AabDqkwKDiEVz73Z9Xn2SMnKnquTz9V21v");
+    CScript developerfeescriptpubkey = GetScriptForDestination(developerfeeaddress.Get());
     CAmount requiredMasternodePayment = GetMasternodePayment(nBlockHeight, nReward, mnodeman.size() + Params().MasternodeCountDrift());
+	CAmount requiredDeveloperPayment = nReward * 0.2;
 
     //require at least 6 signatures
     BOOST_FOREACH (CMasternodePayee& payee, vecPayments)
@@ -525,20 +544,28 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 
     // if we don't have at least 6 signatures on a payee, approve whichever is the longest chain
     if (nMaxSignatures < MNPAYMENTS_SIGNATURES_REQUIRED) return true;
+	
+	bool foundDevFee = false;
 
     BOOST_FOREACH (CMasternodePayee& payee, vecPayments) {
         bool found = false;
+				if(nBlockHeight <= 45) foundDevFee = true;
+		
+	
         BOOST_FOREACH (CTxOut out, txNew.vout) {
             if (payee.scriptPubKey == out.scriptPubKey) {
                 if(out.nValue >= requiredMasternodePayment)
                     found = true;
                 else
-                    LogPrintf("Masternode payment is out of drift range. Paid=%s Min=%s\n", FormatMoney(out.nValue).c_str(), FormatMoney(requiredMasternodePayment).c_str());
-            }
+if(foundDevFee)
+		LogPrintf("CMasternodePayments::IsTransactionValid - Missing required payment of %s to %s\n", FormatMoney(requiredMasternodePayment).c_str(), strPayeesPossible.c_str());
+	else
+		LogPrintf("CMasternodePayments::IsTransactionValid - Missing developerfee");
+	            }
         }
 
         if (payee.nVotes >= MNPAYMENTS_SIGNATURES_REQUIRED) {
-            if (found) return true;
+            if (found && foundDevFee) return true;
 
             CTxDestination address1;
             ExtractDestination(payee.scriptPubKey, address1);
