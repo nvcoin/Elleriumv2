@@ -1,5 +1,5 @@
-**This is a must update!->>>Ver6.1.0**
-=====================================
+**This is a must update!->>>Ver6.1.1>>>>>>fixed "Out of memory"**
+=================================================================
 
 
 To build dependencies for the current arch+OS:
