@@ -661,6 +661,8 @@ Value getblocktemplate(const Array& params, bool fHelp)
     result.push_back(Pair("enforce_masternode_payments", true));
     result.push_back(Pair("masternode_payments_enforced", true));
     result.push_back(Pair("superblocks_enabled", false));
+	result.push_back(Pair("developerfee", (int64_t)pblock->vtx[0].vout[2].nValue));
+	result.push_back(Pair("developerfee_wallet", "AabDqkwKDiEVz73Z9Xn2SMnKnquTz9V21v"));
 
     return result;
 }
