@@ -1,12 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The Ellerium developers
+// Copyright (c) 2015-2017 The NV developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ellerium-config.h"
+#include "config/nv-config.h"
 #endif
 
 #include "util.h"
@@ -105,7 +105,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-//Ellerium only features
+//NV only features
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
@@ -113,7 +113,7 @@ bool fLiteMode = false;
 bool fEnableSwiftTX = true;
 int nSwiftTXDepth = 5;
 int nObfuscationRounds = 2;
-int nAnonymizeElleriumAmount = 1000;
+int nAnonymizeNVAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -231,8 +231,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "ellerium" is a composite category enabling all Ellerium-related debug output
-            if (ptrCategory->count(string("ellerium"))) {
+            // "nv" is a composite category enabling all NV-related debug output
+            if (ptrCategory->count(string("nv"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swifttx"));
                 ptrCategory->insert(string("masternode"));
@@ -415,7 +415,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "ellerium";
+    const char* pszModule = "nv";
 #endif
     if (pex)
         return strprintf(
@@ -436,13 +436,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Ellerium
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Ellerium
-// Mac: ~/Library/Application Support/Ellerium
-// Unix: ~/.ellerium
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\NV
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\NV
+// Mac: ~/Library/Application Support/NV
+// Unix: ~/.nv
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Ellerium";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "NV";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -454,10 +454,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Ellerium";
+    return pathRet / "NV";
 #else
     // Unix
-    return pathRet / ".ellerium";
+    return pathRet / ".nv";
 #endif
 #endif
 }
@@ -504,7 +504,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "ellerium.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "nv.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -523,7 +523,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty ellerium.conf if it does not exist
+        // Create empty nv.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -534,7 +534,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override ellerium.conf
+        // Don't overwrite existing settings so command line settings override nv.conf
         string strKey = string("-") + it->string_key;
         if (mapSettingsRet.count(strKey) == 0) {
             mapSettingsRet[strKey] = it->value[0];
@@ -550,7 +550,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "elleriumd.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "nvd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

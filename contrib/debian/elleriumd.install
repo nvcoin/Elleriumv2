@@ -1,2 +1,2 @@
-usr/local/bin/elleriumd usr/bin
-usr/local/bin/ellerium-cli usr/bin
+usr/local/bin/nvd usr/bin
+usr/local/bin/nv-cli usr/bin

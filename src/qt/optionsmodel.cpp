@@ -1,11 +1,11 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The Ellerium developers
+// Copyright (c) 2015-2017 The NV developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ellerium-config.h"
+#include "config/nv-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -61,7 +61,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::ELP);
+        settings.setValue("nDisplayUnit", BitcoinUnits::NV);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -75,11 +75,11 @@ void OptionsModel::Init()
     if (!settings.contains("nObfuscationRounds"))
         settings.setValue("nObfuscationRounds", 2);
 
-    if (!settings.contains("nAnonymizeElleriumAmount"))
-        settings.setValue("nAnonymizeElleriumAmount", 1000);
+    if (!settings.contains("nAnonymizeNVAmount"))
+        settings.setValue("nAnonymizeNVAmount", 1000);
 
     nObfuscationRounds = settings.value("nObfuscationRounds").toLongLong();
-    nAnonymizeElleriumAmount = settings.value("nAnonymizeElleriumAmount").toLongLong();
+    nAnonymizeNVAmount = settings.value("nAnonymizeNVAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -146,8 +146,8 @@ void OptionsModel::Init()
 
     if (settings.contains("nObfuscationRounds"))
         SoftSetArg("-obfuscationrounds", settings.value("nObfuscationRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeElleriumAmount"))
-        SoftSetArg("-anonymizeelleriumamount", settings.value("nAnonymizeElleriumAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeNVAmount"))
+        SoftSetArg("-anonymizenvamount", settings.value("nAnonymizeNVAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -158,7 +158,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in ellerium.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in nv.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -227,8 +227,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case ObfuscationRounds:
             return QVariant(nObfuscationRounds);
-        case AnonymizeElleriumAmount:
-            return QVariant(nAnonymizeElleriumAmount);
+        case AnonymizeNVAmount:
+            return QVariant(nAnonymizeNVAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -337,10 +337,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("nObfuscationRounds", nObfuscationRounds);
             emit obfuscationRoundsChanged(nObfuscationRounds);
             break;
-        case AnonymizeElleriumAmount:
-            nAnonymizeElleriumAmount = value.toInt();
-            settings.setValue("nAnonymizeElleriumAmount", nAnonymizeElleriumAmount);
-            emit anonymizeElleriumAmountChanged(nAnonymizeElleriumAmount);
+        case AnonymizeNVAmount:
+            nAnonymizeNVAmount = value.toInt();
+            settings.setValue("nAnonymizeNVAmount", nAnonymizeNVAmount);
+            emit anonymizeNVAmountChanged(nAnonymizeNVAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

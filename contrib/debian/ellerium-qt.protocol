@@ -1,6 +1,6 @@
 [Protocol]
-exec=ellerium-qt '%u'
-protocol=ellerium
+exec=nv-qt '%u'
+protocol=nv
 input=none
 output=none
 helper=true

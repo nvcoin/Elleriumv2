@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy ELP</string>
+      <string>Buy NV</string>
      </property>
      <property name="icon">
-      <iconset resource="../ellerium.qrc">
+      <iconset resource="../nv.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>ELP</string>
+      <string>NV</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,7 +1704,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>ELP</string>
+      <string>NV</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="UnitsInputELP">
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell ELP</string>
+      <string>Sell NV</string>
      </property>
      <property name="icon">
-      <iconset resource="../ellerium">
+      <iconset resource="../nv">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,7 +1777,7 @@
          </font>
         </property>
         <property name="text">
-         <string>ELP Available:</string>
+         <string>NV Available:</string>
         </property>
        </widget>
       </item>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>ELP</string>
+         <string>NV</string>
         </property>
        </widget>
       </item>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>ELP Balance:</string>
+      <string>NV Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>ELP Available:</string>
+      <string>NV Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,7 +2832,7 @@
       </font>
      </property>
      <property name="text">
-      <string>ELP Pending:</string>
+      <string>NV Pending:</string>
      </property>
     </widget>
     <widget class="QLabel" name="ELPPendingLabel">
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex ELP Deposit Address:</string>
+      <string>Bittrex NV Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate Ellerium Deposit Address</string>
+      <string>Generate NV Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../ellerium.qrc">
+      <iconset resource="../nv.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertEllerium">
+     <widget class="QPushButton" name="btnConvertNV">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../ellerium.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../nv.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../ellerium.qrc">
+      <iconset resource="../nv.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../ellerium.qrc"/>
+  <include location="../nv.qrc"/>
  </resources>
  <connections/>
 </ui>

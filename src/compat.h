@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ellerium-config.h"
+#include "config/nv-config.h"
 #endif
 
 #ifdef WIN32
@@ -72,13 +72,13 @@ typedef u_int SOCKET;
 #define MAX_PATH 1024
 #endif
 
-// As Ellerium does not have the MSG_NOSIGNAL flag for send(2) syscall, it is defined as 0
+// As NV does not have the MSG_NOSIGNAL flag for send(2) syscall, it is defined as 0
 #if !defined(HAVE_MSG_NOSIGNAL) && !defined(MSG_NOSIGNAL)
 #define MSG_NOSIGNAL 0
 #endif
 
 #ifndef WIN32
-// PRIO_MAX is not defined on Ellerium
+// PRIO_MAX is not defined on NV
 #ifndef PRIO_MAX
 #define PRIO_MAX 20
 #endif

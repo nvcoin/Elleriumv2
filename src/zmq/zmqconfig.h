@@ -6,7 +6,7 @@
 #define BITCOIN_ZMQ_ZMQCONFIG_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ellerium-config.h"
+#include "config/nv-config.h"
 #endif
 
 #include <stdarg.h>

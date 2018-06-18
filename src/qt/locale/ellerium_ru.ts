@@ -58,12 +58,12 @@
         <translation>Отправка адресов</translation>
     </message>
     <message>
-        <source>These are your Ellerium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши Ellerium-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your NV addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши NV-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your Ellerium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши Ellerium-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your NV addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши NV-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,8 +160,8 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Ellerium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
-        <translation>Ellerium сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Ellerium от кражи с использованием вредоносного ПО.</translation>
+        <source>NV will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
+        <translation>NV сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши NV от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -223,8 +223,8 @@
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The Ellerium address to sign the message with</source>
-        <translation>Адрес Ellerium для подписи сообщения с помощью</translation>
+        <source>The NV address to sign the message with</source>
+        <translation>Адрес NV для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -255,8 +255,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ellerium address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Ellerium</translation>
+        <source>Sign the message to prove you own this NV address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес NV</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -562,16 +562,16 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
-        <source>Send coins to a Ellerium address</source>
-        <translation>Отправить монеты на Ellerium адрес</translation>
+        <source>Send coins to a NV address</source>
+        <translation>Отправить монеты на NV адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ellerium: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и Ellerium: URI)</translation>
+        <source>Request payments (generates QR codes and nv: URIs)</source>
+        <translation>Запросить платежи (генерирует QR-код и NV: URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -582,16 +582,16 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About Ellerium Core</source>
-        <translation>&amp;О Ellerium Core</translation>
+        <source>&amp;About NV Core</source>
+        <translation>&amp;О NV Core</translation>
     </message>
     <message>
-        <source>Show information about Ellerium Core</source>
-        <translation>Показать информацию о Ellerium Core</translation>
+        <source>Show information about NV Core</source>
+        <translation>Показать информацию о NV Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ellerium</source>
-        <translation>Изменение параметров конфигурации Ellerium</translation>
+        <source>Modify configuration options for NV</source>
+        <translation>Изменение параметров конфигурации NV</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -630,12 +630,12 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Ellerium Core client</source>
-        <translation>Клиент Ellerium Core</translation>
+        <source>NV Core client</source>
+        <translation>Клиент NV Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ellerium network</source>
-        <translation><numerusform>%n активное подключение к сети Ellerium</numerusform><numerusform>%n активных подключений к сети Ellerium</numerusform><numerusform>%n активных подключений к сети Ellerium</numerusform><numerusform>%n активных подключений к сети Ellerium</numerusform></translation>
+        <source>%n active connection(s) to NV network</source>
+        <translation><numerusform>%n активное подключение к сети NV</numerusform><numerusform>%n активных подключений к сети NV</numerusform><numerusform>%n активных подключений к сети NV</numerusform><numerusform>%n активных подключений к сети NV</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -753,8 +753,8 @@ Address: %4
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ellerium.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (ellerium.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (nv.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (nv.conf).</translation>
     </message>
 </context>
 <context>
@@ -962,8 +962,8 @@ Address: %4
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ellerium address.</source>
-        <translation>Введенный адрес "%1" не является Ellerium адресом.</translation>
+        <source>The entered address "%1" is not a valid NV address.</source>
+        <translation>Введенный адрес "%1" не является NV адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1008,16 +1008,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Ellerium Core</source>
-        <translation>О Ellerium Core</translation>
+        <source>About NV Core</source>
+        <translation>О NV Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1059,16 +1059,16 @@ Address: %4
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Ellerium Core.</source>
-        <translation>Добро пожаловать в Ellerium Core.</translation>
+        <source>Welcome to NV Core.</source>
+        <translation>Добро пожаловать в NV Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Ellerium Core will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Ellerium Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where NV Core will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные NV Core.</translation>
     </message>
     <message>
-        <source>Ellerium Core will download and store a copy of the Ellerium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Ellerium Core загрузит и сохранит копию цепочки блоков Ellerium. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>NV Core will download and store a copy of the NV block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>NV Core загрузит и сохранит копию цепочки блоков NV. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1079,8 +1079,8 @@ Address: %4
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1237,12 +1237,12 @@ Address: %4
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Ellerium addresses after it matures.
-To Add: enter percentage to give and Ellerium address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other NV addresses after it matures.
+To Add: enter percentage to give and NV address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и удерживание, после их созревания, на другие Ellerium адреса.
-Для добавления: введите передаваемый процент и Ellerium адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и удерживание, после их созревания, на другие NV адреса.
+Для добавления: введите передаваемый процент и NV адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1380,48 +1380,48 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ELP</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 ELP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NV</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 NV</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ELP</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 ELP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NV</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 NV</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ELP to anonymize 10000 ELP</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 ELP для анонимизации 10000 ELP</translation>
+        <source>This option is the quickest and will cost about ~0.025 NV to anonymize 10000 NV</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 NV для анонимизации 10000 NV</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ELP to anonymize 10000 ELP</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 ELP для анонимизации 10000 ELP</translation>
+        <source>This option is moderately fast and will cost about 0.05 NV to anonymize 10000 NV</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 NV для анонимизации 10000 NV</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 ELP per 10000 ELP you anonymize.</source>
-        <translation>0.1 ELP за 10000 ELP которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 NV per 10000 NV you anonymize.</source>
+        <translation>0.1 NV за 10000 NV которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Настройка Перемешивания</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Ellerium's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки Ellerium.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NV's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки NV.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Ellerium's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки Ellerium.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NV's configuration screen.</source>
+        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки NV.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Ellerium's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки Ellerium.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NV's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки NV.</translation>
     </message>
 </context>
 <context>
@@ -1482,8 +1482,8 @@ Please check the address and try again.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the Ellerium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт Ellerium через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the NV client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт NV через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1502,12 +1502,12 @@ Please check the address and try again.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start Ellerium after logging in to the system.</source>
-        <translation>Автоматически запускать Ellerium после входа в систему.</translation>
+        <source>Automatically start NV after logging in to the system.</source>
+        <translation>Автоматически запускать NV после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start Ellerium on system login</source>
-        <translation>&amp;Запускать Ellerium при входе в систему</translation>
+        <source>&amp;Start NV on system login</source>
+        <translation>&amp;Запускать NV при входе в систему</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1522,8 +1522,8 @@ Please check the address and try again.</source>
         <translation>При достижении этого значения Перемешивание будет отключено.</translation>
     </message>
     <message>
-        <source>Amount of Ellerium to keep anonymized</source>
-        <translation>Количество Ellerium, держащихся анонимизированными</translation>
+        <source>Amount of NV to keep anonymized</source>
+        <translation>Количество NV, держащихся анонимизированными</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1550,22 +1550,22 @@ Please check the address and try again.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ellerium.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска Ellerium.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting NV.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска NV.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ellerium-project/ellerium-project-translations</source>
+https://www.transifex.com/nv-project/nv-project-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/ellerium-project/ellerium-project-translations</translation>
+https://www.transifex.com/nv-project/nv-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Ellerium network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети Ellerium через SOCKS5 прокси.</translation>
+        <source>Connect to the NV network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети NV через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1803,8 +1803,8 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</transl
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Ellerium address to sign the message with</source>
-        <translation>Адрес Ellerium для подписи сообщения с помощью</translation>
+        <source>The NV address to sign the message with</source>
+        <translation>Адрес NV для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1827,8 +1827,8 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</transl
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ellerium address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Ellerium</translation>
+        <source>Sign the message to prove you own this NV address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес NV</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1866,8 +1866,8 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</transl
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     </context>
 <context>
@@ -1962,7 +1962,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</transl
     </message>
     </context>
 <context>
-    <name>ellerium-core</name>
+    <name>nv-core</name>
     <message>
         <source>Block creation options:</source>
         <translation>Варианты создания блока:</translation>
@@ -1992,8 +1992,8 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</transl
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Ellerium Core Developers</source>
-        <translation>Copyright (C) 2015-%i Разработчики Ellerium Core</translation>
+        <source>Copyright (C) 2015-%i The NV Core Developers</source>
+        <translation>Copyright (C) 2015-%i Разработчики NV Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

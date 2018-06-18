@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  elleriumd The Ellerium core server.
+#  nvd The NV core server.
 #
 #
 # chkconfig: 345 80 20
-# description: elleriumd
-# processname: elleriumd
+# description: nvd
+# processname: nvd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/elleriumd, see below
-if [ -f /etc/sysconfig/elleriumd ]; then
-        . /etc/sysconfig/elleriumd
+# you can override defaults in /etc/sysconfig/nvd, see below
+if [ -f /etc/sysconfig/nvd ]; then
+        . /etc/sysconfig/nvd
 fi
 
 RETVAL=0
 
-prog=elleriumd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/elleriumd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/elleriumd}
+prog=nvd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/nvd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/nvd}
 
-# elleriumd defaults to /usr/bin/elleriumd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/elleriumd}
+# nvd defaults to /usr/bin/nvd, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/nvd}
 
-# elleriumd opts default to -disablewallet, override with BITCOIND_OPTS
+# nvd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

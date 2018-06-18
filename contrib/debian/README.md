@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package elleriumd/ellerium-qt
-for Debian-based Linux systems. If you compile elleriumd/ellerium-qt yourself, there are some useful files here.
+This directory contains files used to package nvd/nv-qt
+for Debian-based Linux systems. If you compile nvd/nv-qt yourself, there are some useful files here.
 
-## ellerium: URI support ##
+## nv: URI support ##
 
 
-ellerium-qt.desktop  (Gnome / Open Desktop)
+nv-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install ellerium-qt.desktop
+	sudo desktop-file-install nv-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your elleriumqt binary to `/usr/bin`
-and the `../../share/pixmaps/ellerium128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your nvqt binary to `/usr/bin`
+and the `../../share/pixmaps/nv128.png` to `/usr/share/pixmaps`
 
-ellerium-qt.protocol (KDE)
+nv-qt.protocol (KDE)
 

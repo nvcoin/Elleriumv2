@@ -1,25 +1,25 @@
-# /etc/conf.d/elleriumd: config file for /etc/init.d/elleriumd
+# /etc/conf.d/nvd: config file for /etc/init.d/nvd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/ellerium/ellerium.conf"
+#BITCOIND_CONFIGFILE="/etc/nv/nv.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/elleriumd"
+#BITCOIND_PIDDIR="/var/run/nvd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/elleriumd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/nvd.pid"
 
-# Where to write elleriumd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/elleriumd"
+# Where to write nvd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/nvd"
 
-# User and group to own elleriumd process
-#BITCOIND_USER="ellerium"
-#BITCOIND_GROUP="ellerium"
+# User and group to own nvd process
+#BITCOIND_USER="nv"
+#BITCOIND_GROUP="nv"
 
-# Path to elleriumd executable
-#BITCOIND_BIN="/usr/bin/elleriumd"
+# Path to nvd executable
+#BITCOIND_BIN="/usr/bin/nvd"
 
-# Nice value to run elleriumd under
+# Nice value to run nvd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

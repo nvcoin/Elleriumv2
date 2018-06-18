@@ -6,7 +6,7 @@
 #define BITCOIN_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ellerium-config.h"
+#include "config/nv-config.h"
 #endif
 
 #include <QIcon>

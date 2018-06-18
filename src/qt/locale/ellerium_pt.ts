@@ -58,12 +58,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your Ellerium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços Ellerium para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your NV addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços NV para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Ellerium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços Ellerium para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your NV addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços NV para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Ellerium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
-        <translation>Ellerium encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas ELPs contra roubo por malware infectando seu computador.</translation>
+        <source>NV will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
+        <translation>NV encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas ELPs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Tem certeza que deseja encriptar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ELP&lt;/b&gt;!</source>
-        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA ELP&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NV&lt;/b&gt;!</source>
+        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA NV&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -404,7 +404,7 @@
     </message>
     </context>
 <context>
-    <name>ellerium-core</name>
+    <name>nv-core</name>
     <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Conectar usando proxy SOCKS5</translation>

@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/ellerium-config.h \
+           src/nv-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/ellerium-config.h \
+           src/config/nv-config.h \
            src/crypto/common.h \
 		   src/crypto/scrypt.h \
            src/crypto/hmac_sha256.h \
@@ -340,7 +340,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/ellerium.moc \
+           src/qt/nv.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -381,9 +381,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/ellerium-cli.cpp \
-           src/ellerium-tx.cpp \
-           src/ellerium.cpp \
+           src/nv-cli.cpp \
+           src/nv-tx.cpp \
+           src/nv.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -486,8 +486,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/ellerium.cpp \
-           src/qt/elleriumstrings.cpp \
+           src/qt/nv.cpp \
+           src/qt/nvstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -565,7 +565,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_ellerium.cpp \
+           src/test/test_nv.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -656,21 +656,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/ellerium.qrc src/qt/ellerium_locale.qrc
+RESOURCES += src/qt/nv.qrc src/qt/nv_locale.qrc
 
-TRANSLATIONS += src/qt/locale/ellerium_bg.ts \
-                src/qt/locale/ellerium_de.ts \
-                src/qt/locale/ellerium_en.ts \
-                src/qt/locale/ellerium_es.ts \
-                src/qt/locale/ellerium_fi.ts \
-                src/qt/locale/ellerium_fr.ts \
-                src/qt/locale/ellerium_it.ts \
-                src/qt/locale/ellerium_ja.ts \
-                src/qt/locale/ellerium_pl.ts \
-                src/qt/locale/ellerium_pt.ts \
-                src/qt/locale/ellerium_ru.ts \
-                src/qt/locale/ellerium_sk.ts \
-                src/qt/locale/ellerium_sv.ts \
-                src/qt/locale/ellerium_vi.ts \
-                src/qt/locale/ellerium_zh_CN.ts \
-                src/qt/locale/ellerium_zh_TW.ts
+TRANSLATIONS += src/qt/locale/nv_bg.ts \
+                src/qt/locale/nv_de.ts \
+                src/qt/locale/nv_en.ts \
+                src/qt/locale/nv_es.ts \
+                src/qt/locale/nv_fi.ts \
+                src/qt/locale/nv_fr.ts \
+                src/qt/locale/nv_it.ts \
+                src/qt/locale/nv_ja.ts \
+                src/qt/locale/nv_pl.ts \
+                src/qt/locale/nv_pt.ts \
+                src/qt/locale/nv_ru.ts \
+                src/qt/locale/nv_sk.ts \
+                src/qt/locale/nv_sv.ts \
+                src/qt/locale/nv_vi.ts \
+                src/qt/locale/nv_zh_CN.ts \
+                src/qt/locale/nv_zh_TW.ts

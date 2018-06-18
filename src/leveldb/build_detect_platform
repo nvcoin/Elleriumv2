@@ -93,8 +93,8 @@ case "$TARGET_OS" in
         PORT_FILE=port/port_posix.cc
         ;;
     SunOS)
-        PLATFORM=OS_ELLERIUM
-        COMMON_FLAGS="$MEMCMP_FLAG -D_REENTRANT -DOS_ELLERIUM"
+        PLATFORM=OS_NV
+        COMMON_FLAGS="$MEMCMP_FLAG -D_REENTRANT -DOS_NV"
         PLATFORM_LIBS="-lpthread -lrt"
         PORT_FILE=port/port_posix.cc
         ;;

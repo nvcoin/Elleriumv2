@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie Ellerium überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie NV überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie Ellerium empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie NV empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your Ellerium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre Ellerium-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Ellerium überweisen.</translation>
+        <source>These are your NV addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre NV-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie NV überweisen.</translation>
     </message>
     <message>
-        <source>These are your Ellerium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre Ellerium-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your NV addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre NV-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,7 +176,7 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Ellerium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
+        <source>NV will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
         <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer ELPs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ELP&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NV&lt;/b&gt;!</source>
         <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre ELPs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -478,16 +478,16 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
-        <source>Send coins to a Ellerium address</source>
-        <translation>An eine Ellerium-Adresse überweisen</translation>
+        <source>Send coins to a NV address</source>
+        <translation>An eine NV-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ellerium: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und ellerium: URIs)</translation>
+        <source>Request payments (generates QR codes and nv: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und nv: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -498,24 +498,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About Ellerium Core</source>
-        <translation>Über.Ellerium Core</translation>
+        <source>&amp;About NV Core</source>
+        <translation>Über.NV Core</translation>
     </message>
     <message>
-        <source>Show information about Ellerium Core</source>
-        <translation>Zeigt Informationen über Ellerium Core</translation>
+        <source>Show information about NV Core</source>
+        <translation>Zeigt Informationen über NV Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ellerium</source>
-        <translation>Konfiguration von Ellerium verändern</translation>
+        <source>Modify configuration options for NV</source>
+        <translation>Konfiguration von NV verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your Ellerium addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer Ellerium-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your NV addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer NV-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ellerium addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten Ellerium-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified NV addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten NV-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -640,8 +640,8 @@ Adresse: %4</translation>
         <translation>Suche</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ellerium.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "ellerium.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (nv.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "nv.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -773,8 +773,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ellerium address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige Ellerium-Adresse.</translation>
+        <source>The entered address "%1" is not a valid NV address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige NV-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -819,16 +819,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About Ellerium Core</source>
-        <translation>Über Ellerium Core</translation>
+        <source>About NV Core</source>
+        <translation>Über NV Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -874,16 +874,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to Ellerium Core.</source>
-        <translation>Willkommen zu Ellerium Core.</translation>
+        <source>Welcome to NV Core.</source>
+        <translation>Willkommen zu NV Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Ellerium Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie Ellerium Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where NV Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie NV Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>Ellerium Core will download and store a copy of the Ellerium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Ellerium Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>NV Core will download and store a copy of the NV block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>NV Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -894,8 +894,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1128,8 +1128,8 @@ Adresse: %4</translation>
         <translation>Verschleierter Betrag:</translation>
     </message>
     <message>
-        <source>0 ELP / 0 Rounds</source>
-        <translation>0 ELP / 0 Runden</translation>
+        <source>0 NV / 0 Rounds</source>
+        <translation>0 NV / 0 Runden</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -1269,8 +1269,8 @@ Adresse: %4</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a Ellerium address (e.g. %1)</source>
-        <translation>Ellerium-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a NV address (e.g. %1)</source>
+        <translation>NV-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1531,8 +1531,8 @@ Adresse: %4</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 ELP</source>
-        <translation>0 ELP</translation>
+        <source>0 NV</source>
+        <translation>0 NV</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -1642,8 +1642,8 @@ Adresse: %4</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The Ellerium address to send the payment to</source>
-        <translation>Ellerium-Adresse, an die überwiesen werden soll</translation>
+        <source>The NV address to send the payment to</source>
+        <translation>NV-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1682,8 +1682,8 @@ Adresse: %4</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Ellerium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ellerium network.</source>
-        <translation>Eine an die Ellerium-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Ellerium-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the NV: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NV network.</source>
+        <translation>Eine an die NV-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das NV-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -1709,8 +1709,8 @@ Adresse: %4</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Ellerium Core is shutting down...</source>
-        <translation>Ellerium Core wird beendet...</translation>
+        <source>NV Core is shutting down...</source>
+        <translation>NV Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1751,8 +1751,8 @@ Adresse: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1767,8 +1767,8 @@ Adresse: %4</translation>
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The Ellerium Core developers</source>
-        <translation>Die Ellerium Core Entwickler</translation>
+        <source>The NV Core developers</source>
+        <translation>Die NV Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2307,8 +2307,8 @@ Adresse: %4</translation>
         <translation>ELPs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 ELP.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 ELP begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NV.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 NV begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -2351,7 +2351,7 @@ Adresse: %4</translation>
     </message>
 </context>
 <context>
-    <name>ellerium-core</name>
+    <name>nv-core</name>
     <message>
         <source>Error</source>
         <translation>Fehler</translation>
@@ -2501,8 +2501,8 @@ Adresse: %4</translation>
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ellerium Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte Ellerium Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart NV Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte NV Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

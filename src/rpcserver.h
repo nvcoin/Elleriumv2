@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * Ellerium RPC command dispatcher.
+ * NV RPC command dispatcher.
  */
 class CRPCTable
 {

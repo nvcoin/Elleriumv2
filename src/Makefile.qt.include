@@ -1,21 +1,21 @@
-bin_PROGRAMS += qt/ellerium-qt
+bin_PROGRAMS += qt/nv-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# ellerium qt core #
+# nv qt core #
 QT_TS = \
-  qt/locale/ellerium_ca.ts \
-  qt/locale/ellerium_da.ts \
-  qt/locale/ellerium_de.ts \
-  qt/locale/ellerium_en.ts \
-  qt/locale/ellerium_en_US.ts \
-  qt/locale/ellerium_es.ts \
-  qt/locale/ellerium_fr_FR.ts \
-  qt/locale/ellerium_it.ts \
-  qt/locale/ellerium_ja.ts \
-  qt/locale/ellerium_pt.ts \
-  qt/locale/ellerium_ro_RO.ts \
-  qt/locale/ellerium_ru.ts \
-  qt/locale/ellerium_zh_TW.ts
+  qt/locale/nv_ca.ts \
+  qt/locale/nv_da.ts \
+  qt/locale/nv_de.ts \
+  qt/locale/nv_en.ts \
+  qt/locale/nv_en_US.ts \
+  qt/locale/nv_es.ts \
+  qt/locale/nv_fr_FR.ts \
+  qt/locale/nv_it.ts \
+  qt/locale/nv_ja.ts \
+  qt/locale/nv_pt.ts \
+  qt/locale/nv_ro_RO.ts \
+  qt/locale/nv_ru.ts \
+  qt/locale/nv_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -95,16 +95,16 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/ellerium.moc \
+  qt/nv.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_ellerium.cpp
-QT_QRC = qt/ellerium.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_ellerium_locale.cpp
-QT_QRC_LOCALE = qt/ellerium_locale.qrc
+QT_QRC_CPP = qt/qrc_nv.cpp
+QT_QRC = qt/nv.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_nv_locale.cpp
+QT_QRC_LOCALE = qt/nv_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -218,12 +218,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_ellerium.png \
-  qt/res/icons/unit_mellerium.png \
-  qt/res/icons/unit_uellerium.png \
-  qt/res/icons/unit_tellerium.png \
-  qt/res/icons/unit_tmellerium.png \
-  qt/res/icons/unit_tuellerium.png
+  qt/res/icons/unit_nv.png \
+  qt/res/icons/unit_mnv.png \
+  qt/res/icons/unit_unv.png \
+  qt/res/icons/unit_tnv.png \
+  qt/res/icons/unit_tmnv.png \
+  qt/res/icons/unit_tunv.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -290,7 +290,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/ellerium_logo_horizontal.png \
+  qt/res/images/nv_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -306,7 +306,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/ellerium-qt-res.rc
+BITCOIN_RC = qt/res/nv-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -326,68 +326,68 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_ellerium_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_nv_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# ellerium-qt binary #
-qt_ellerium_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# nv-qt binary #
+qt_nv_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_ellerium_qt_SOURCES = qt/ellerium.cpp
+qt_nv_qt_SOURCES = qt/nv.cpp
 if TARGET_DARWIN
-  qt_ellerium_qt_SOURCES += $(BITCOIN_MM)
+  qt_nv_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_ellerium_qt_SOURCES += $(BITCOIN_RC)
+  qt_nv_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_ellerium_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_nv_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_ellerium_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_nv_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_ellerium_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_nv_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_ellerium_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_nv_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1)
-qt_ellerium_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_ellerium_qt_LIBTOOLFLAGS = --tag CXX
+qt_nv_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_nv_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/elleriumstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/nvstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/elleriumstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/nvstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/ellerium_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/nv_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name ellerium_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name nv_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name ellerium $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name nv $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-ellerium_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_ellerium_qt_OBJECTS) qt/ellerium-qt$(EXEEXT) $(LIBBITCOINQT)
+nv_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_nv_qt_OBJECTS) qt/nv-qt$(EXEEXT) $(LIBBITCOINQT)
 
-ellerium_qt : qt/ellerium-qt$(EXEEXT)
+nv_qt : qt/nv-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

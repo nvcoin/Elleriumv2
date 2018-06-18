@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Ellerium"
-            VALUE "FileDescription",    "elleriumd (OSS daemon/client for Ellerium)"
+            VALUE "CompanyName",        "NV"
+            VALUE "FileDescription",    "nvd (OSS daemon/client for NV)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "elleriumd"
+            VALUE "InternalName",       "nvd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "elleriumd.exe"
-            VALUE "ProductName",        "elleriumd"
+            VALUE "OriginalFilename",   "nvd.exe"
+            VALUE "ProductName",        "nvd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

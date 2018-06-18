@@ -252,6 +252,6 @@
     </message>
     </context>
 <context>
-    <name>ellerium-core</name>
+    <name>nv-core</name>
     </context>
 </TS>

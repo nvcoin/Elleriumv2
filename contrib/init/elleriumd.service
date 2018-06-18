@@ -1,19 +1,19 @@
 [Unit]
-Description=Ellerium's distributed currency daemon
+Description=NV's distributed currency daemon
 After=network.target
 
 [Service]
-User=ellerium
-Group=ellerium
+User=nv
+Group=nv
 
 Type=forking
-PIDFile=/var/lib/elleriumd/elleriumd.pid
+PIDFile=/var/lib/nvd/nvd.pid
 
-ExecStart=/usr/bin/elleriumd -daemon -pid=/var/lib/elleriumd/elleriumd.pid \
-          -conf=/etc/ellerium/ellerium.conf -datadir=/var/lib/elleriumd
+ExecStart=/usr/bin/nvd -daemon -pid=/var/lib/nvd/nvd.pid \
+          -conf=/etc/nv/nv.conf -datadir=/var/lib/nvd
 
-ExecStop=-/usr/bin/ellerium-cli -conf=/etc/ellerium/ellerium.conf \
-         -datadir=/var/lib/elleriumd stop
+ExecStop=-/usr/bin/nv-cli -conf=/etc/nv/nv.conf \
+         -datadir=/var/lib/nvd stop
 
 Restart=always
 PrivateTmp=true

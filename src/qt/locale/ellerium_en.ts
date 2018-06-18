@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Ellerium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your NV addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Ellerium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your NV addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Ellerium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
+        <source>NV will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ELP&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NV&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a Ellerium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a NV Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The Ellerium address to sign the message with</source>
+        <source>The NV address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Ellerium address</source>
+        <source>Sign the message to prove you own this NV address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -391,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The Ellerium address the message was signed with</source>
+        <source>The NV address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified Ellerium address</source>
+        <source>Verify the message to ensure it was signed with the specified NV address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -771,17 +771,17 @@
     <message>
         <location line="-396"/>
         <location line="+831"/>
-        <source>Ellerium Core</source>
+        <source>NV Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-652"/>
-        <source>Send coins to a Ellerium address</source>
+        <source>Send coins to a NV address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and ellerium: URIs)</source>
+        <source>Request payments (generates QR codes and nv: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -796,27 +796,27 @@
     </message>
     <message>
         <location line="+29"/>
-        <source>&amp;About Ellerium Core</source>
+        <source>&amp;About NV Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Ellerium Core</source>
+        <source>Show information about NV Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for Ellerium</source>
+        <source>Modify configuration options for NV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your Ellerium addresses to prove you own them</source>
+        <source>Sign messages with your NV addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Ellerium addresses</source>
+        <source>Verify messages to ensure they were signed with specified NV addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -856,7 +856,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Open a Ellerium: URI or payment request</source>
+        <source>Open a NV: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,17 +871,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Ellerium Core help message to get a list with possible Ellerium command-line options</source>
+        <source>Show the NV Core help message to get a list with possible NV command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+201"/>
-        <source>Ellerium Core client</source>
+        <source>NV Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+190"/>
-        <source>%n active connection(s) to Ellerium network</source>
+        <source>%n active connection(s) to NV network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1077,7 +1077,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+473"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ellerium.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (nv.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1456,7 +1456,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid Ellerium address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid NV address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1512,7 +1512,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>Ellerium Core</source>
+        <source>NV Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1523,7 +1523,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About Ellerium Core</source>
+        <source>About NV Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1581,17 +1581,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Ellerium Core.</source>
+        <source>Welcome to NV Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Ellerium Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where NV Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Ellerium Core will download and store a copy of the Ellerium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>NV Core will download and store a copy of the NV block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1606,7 +1606,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>Ellerium Core</source>
+        <source>NV Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1809,8 +1809,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Ellerium addresses after it matures.
-To Add: enter percentage to give and Ellerium address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other NV addresses after it matures.
+To Add: enter percentage to give and NV address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -1975,12 +1975,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ELP</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ELP</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1990,12 +1990,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 ELP to anonymize 10000 ELP</source>
+        <source>This option is the quickest and will cost about ~0.025 NV to anonymize 10000 NV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 ELP to anonymize 10000 ELP</source>
+        <source>This option is moderately fast and will cost about 0.05 NV to anonymize 10000 NV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2005,7 +2005,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 ELP per 10000 ELP you anonymize.</source>
+        <source>0.1 NV per 10000 NV you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2017,17 +2017,17 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Ellerium&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NV&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Ellerium&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NV&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Ellerium&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NV&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2103,7 +2103,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the Ellerium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the NV client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2128,12 +2128,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-179"/>
-        <source>Automatically start Ellerium after logging in to the system.</source>
+        <source>Automatically start NV after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Ellerium on system login</source>
+        <source>&amp;Start NV on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2153,7 +2153,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+15"/>
-        <source>Amount of Ellerium to keep anonymized</source>
+        <source>Amount of NV to keep anonymized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2188,13 +2188,13 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ellerium.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting NV.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ellerium-project/ellerium-project-translations</source>
+https://www.transifex.com/nv-project/nv-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2204,7 +2204,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the Ellerium network through a SOCKS5 proxy.</source>
+        <source>Connect to the NV network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2401,7 +2401,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
         <location line="+10"/>
         <location line="+1015"/>
         <location line="+93"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ellerium network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NV network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2456,7 +2456,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+27"/>
-        <source>0 ELP / 0 Rounds</source>
+        <source>0 NV / 0 Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2688,12 +2688,12 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start ellerium: click-to-pay handler</source>
+        <source>Cannot start nv: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Ellerium address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid NV address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2801,7 +2801,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a Ellerium address (e.g. %1)</source>
+        <source>Enter a NV address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2990,7 +2990,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+149"/>
-        <source>Open the Ellerium debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the NV debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3202,7 +3202,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the Ellerium RPC console.</source>
+        <source>Welcome to the NV RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3298,12 +3298,12 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ellerium network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NV network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Ellerium network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the NV network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3597,7 +3597,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+7"/>
-        <source>0 ELP</source>
+        <source>0 NV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3668,7 +3668,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Ellerium transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for NV transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3801,7 +3801,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+614"/>
-        <source>Warning: Invalid Ellerium address</source>
+        <source>Warning: Invalid NV address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3940,7 +3940,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+18"/>
-        <source>The Ellerium address to send the payment to</source>
+        <source>The NV address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3994,7 +3994,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the Ellerium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ellerium network.</source>
+        <source>A message that was attached to the NV: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NV network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4029,7 +4029,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+42"/>
-        <source>Ellerium Core is shutting down...</source>
+        <source>NV Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4057,7 +4057,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+18"/>
-        <source>The Ellerium address to sign the message with</source>
+        <source>The NV address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4099,17 +4099,17 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Ellerium address</source>
+        <source>Sign the message to prove you own this NV address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The Ellerium address the message was signed with</source>
+        <source>The NV address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Ellerium address</source>
+        <source>Verify the message to ensure it was signed with the specified NV address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4224,7 +4224,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Ellerium Core</source>
+        <source>NV Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4244,7 +4244,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+1"/>
-        <source>The Ellerium Core developers</source>
+        <source>The NV Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4957,7 +4957,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 ELP.</source>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 NV.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5010,9 +5010,9 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
 </context>
 <context>
-    <name>ellerium-core</name>
+    <name>nv-core</name>
     <message>
-        <location filename="../elleriumstrings.cpp" line="+12"/>
+        <location filename="../nvstrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5043,7 +5043,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+4"/>
-        <source>Cannot obtain a lock on data directory %s. Ellerium Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. NV Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5068,7 +5068,7 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+3"/>
-        <source>Disable all Ellerium specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all NV specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5118,12 +5118,12 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in ELP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in NV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in ELP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in NV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5248,22 +5248,22 @@ https://www.transifex.com/ellerium-project/ellerium-project-translations</source
     </message>
     <message>
         <location line="+4"/>
-        <source>To use elleriumd, or the -server option to ellerium-qt, you must set an rpcpassword in the configuration file:
+        <source>To use nvd, or the -server option to nv-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=elleriumrpc
+rpcuser=nvrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;NV Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. Ellerium Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. NV Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5273,12 +5273,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ELP.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NV.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 ELP.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 NV.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5298,7 +5298,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Ellerium Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong NV Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5490,7 +5490,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Ellerium Core Developers</source>
+        <source>Copyright (C) 2015-%i The NV Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5580,7 +5580,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ellerium Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of NV Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5645,7 +5645,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Fee (in ELP/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in NV/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5720,7 +5720,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Ellerium Core is shutting down.</source>
+        <source>Initialization sanity check failed. NV Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5800,7 +5800,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Keep N ELP anonymized (default: %u)</source>
+        <source>Keep N NV anonymized (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6425,7 +6425,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ellerium Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Ellerium Core to complete</source>
+        <source>Wallet needed to be rewritten: restart NV Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

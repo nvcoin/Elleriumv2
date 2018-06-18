@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The Ellerium developers
+// Copyright (c) 2015-2017 The NV developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -219,10 +219,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Ellerium server.");
+            "\nStop NV server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Ellerium server stopping";
+    return "NV server stopping";
 }
 
 
@@ -299,16 +299,16 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Ellerium features */
-        {"ellerium", "masternode", &masternode, true, true, false},
-        {"ellerium", "masternodelist", &masternodelist, true, true, false},
-        {"ellerium", "mnbudget", &mnbudget, true, true, false},
-        {"ellerium", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
-        {"ellerium", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"ellerium", "mnsync", &mnsync, true, true, false},
-        {"ellerium", "spork", &spork, true, true, false},
+        /* NV features */
+        {"nv", "masternode", &masternode, true, true, false},
+        {"nv", "masternodelist", &masternodelist, true, true, false},
+        {"nv", "mnbudget", &mnbudget, true, true, false},
+        {"nv", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
+        {"nv", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"nv", "mnsync", &mnsync, true, true, false},
+        {"nv", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
-        {"ellerium", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"nv", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -573,16 +573,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use elleriumd, or the -server option to ellerium-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use nvd, or the -server option to nv-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=elleriumrpc\n"
+                                               "rpcuser=nvrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Ellerium Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"NV Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1033,7 +1033,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> ellerium-cli " + methodname + " " + args + "\n";
+    return "> nv-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

@@ -214,16 +214,16 @@
         <translation>&amp;Eines</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
-        <source>&amp;About Ellerium Core</source>
-        <translation>&amp;Sobre Ellerium Core</translation>
+        <source>&amp;About NV Core</source>
+        <translation>&amp;Sobre NV Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ellerium network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Ellerium</numerusform><numerusform>%n connexions actives a la xarxa Ellerium</numerusform></translation>
+        <source>%n active connection(s) to NV network</source>
+        <translation><numerusform>%n connexió activa a la xarxa NV</numerusform><numerusform>%n connexions actives a la xarxa NV</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -392,12 +392,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
-        <source>About Ellerium Core</source>
-        <translation>Sobre Ellerium Core</translation>
+        <source>About NV Core</source>
+        <translation>Sobre NV Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -415,12 +415,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Ellerium Core.</source>
-        <translation>Benvingut a Ellerium Core.</translation>
+        <source>Welcome to NV Core.</source>
+        <translation>Benvingut a NV Core.</translation>
     </message>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -888,8 +888,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ellerium Core</source>
-        <translation>Ellerium Core</translation>
+        <source>NV Core</source>
+        <translation>NV Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1040,7 +1040,7 @@
     </message>
     </context>
 <context>
-    <name>ellerium-core</name>
+    <name>nv-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

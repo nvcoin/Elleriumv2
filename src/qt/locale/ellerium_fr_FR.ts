@@ -148,16 +148,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>Ellerium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
-        <translation>Ellerium va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos ELPs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>NV will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ELPs from being stolen by malware infecting your computer.</source>
+        <translation>NV va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos ELPs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ELP&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS ELP&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NV&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS NV&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -207,16 +207,16 @@
         <translation>BIP 38 crypter</translation>
     </message>
     <message>
-        <source>Enter a Ellerium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse Ellerium que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
+        <source>Enter a NV Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse NV que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The Ellerium address to sign the message with</source>
-        <translation>L'adresse Ellerium avec laquelle signer le message</translation>
+        <source>The NV address to sign the message with</source>
+        <translation>L'adresse NV avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -247,8 +247,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ellerium address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse Ellerium</translation>
+        <source>Sign the message to prove you own this NV address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse NV</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -267,12 +267,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The Ellerium address the message was signed with</source>
-        <translation>L'adresse Ellerium avec laquelle le message a été signé</translation>
+        <source>The NV address the message was signed with</source>
+        <translation>L'adresse NV avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ellerium address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Ellerium renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified NV address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse NV renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -506,8 +506,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a Ellerium address</source>
-        <translation>Envoyer des pièces à une adresse Ellerium</translation>
+        <source>Send coins to a NV address</source>
+        <translation>Envoyer des pièces à une adresse NV</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -518,16 +518,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ellerium</source>
-        <translation>Modifier les options de configuration pour Ellerium</translation>
+        <source>Modify configuration options for NV</source>
+        <translation>Modifier les options de configuration pour NV</translation>
     </message>
     <message>
-        <source>Sign messages with your Ellerium addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse Ellerium pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your NV addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse NV pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ellerium addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Ellerium spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified NV addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse NV spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -538,8 +538,8 @@
         <translation>Crypter et décrypter les clés privées en utilisant une phrase secrète</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ellerium network</source>
-        <translation><numerusform>%n connection(s) au réseau Ellerium</numerusform><numerusform>%n connection(s) au réseau Ellerium</numerusform></translation>
+        <source>%n active connection(s) to NV network</source>
+        <translation><numerusform>%n connection(s) au réseau NV</numerusform><numerusform>%n connection(s) au réseau NV</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -645,8 +645,8 @@ Adresse : %4
         <translation>Chercher</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ellerium.conf).</source>
-        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (ellerium.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (nv.conf).</source>
+        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (nv.conf).</translation>
     </message>
 </context>
 <context>
@@ -842,8 +842,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ellerium address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse Ellerium valide</translation>
+        <source>The entered address "%1" is not a valid NV address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse NV valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1038,32 +1038,32 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ELP</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 ELP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NV</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 NV</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ELP</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 ELP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NV</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 NV</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ELP to anonymize 10000 ELP</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 ELP pour anonymiser 10000 ELP</translation>
+        <source>This option is the quickest and will cost about ~0.025 NV to anonymize 10000 NV</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 NV pour anonymiser 10000 NV</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ELP to anonymize 10000 ELP</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 ELP pour anonymiser 10000 ELP</translation>
+        <source>This option is moderately fast and will cost about 0.05 NV to anonymize 10000 NV</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 NV pour anonymiser 10000 NV</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 ELP per 10000 ELP you anonymize.</source>
-        <translation>0.1 ELP par 10000 ELP vous anonymisez.</translation>
+        <source>0.1 NV per 10000 NV you anonymize.</source>
+        <translation>0.1 NV par 10000 NV vous anonymisez.</translation>
     </message>
     </context>
 <context>
@@ -1370,8 +1370,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Après commission</translation>
     </message>
     <message>
-        <source>0 ELP</source>
-        <translation>0 ELP</translation>
+        <source>0 NV</source>
+        <translation>0 NV</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -1461,8 +1461,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The Ellerium address to send the payment to</source>
-        <translation>L'adresse Ellerium à laquelle envoyer le paiement</translation>
+        <source>The NV address to send the payment to</source>
+        <translation>L'adresse NV à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1507,7 +1507,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The Ellerium address to sign the message with</source>
+        <source>The NV address to sign the message with</source>
         <translation>L</translation>
     </message>
     <message>
@@ -1535,16 +1535,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ellerium address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse Ellerium</translation>
+        <source>Sign the message to prove you own this NV address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse NV</translation>
     </message>
     <message>
-        <source>The Ellerium address the message was signed with</source>
-        <translation>L'adresse Ellerium avec laquelle le message a été signé</translation>
+        <source>The NV address the message was signed with</source>
+        <translation>L'adresse NV avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ellerium address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Ellerium renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified NV address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse NV renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1694,7 +1694,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     </message>
     </context>
 <context>
-    <name>ellerium-core</name>
+    <name>nv-core</name>
     <message>
         <source>Error</source>
         <translation>Erreur </translation>

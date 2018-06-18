@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between ellerium-cli and elleriumd)
- * of a given instance of the Ellerium system.
+ * CBaseChainParams defines the base parameters (shared between nv-cli and nvd)
+ * of a given instance of the NV system.
  */
 class CBaseChainParams
 {
