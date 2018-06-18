@@ -2,11 +2,10 @@
 Encoding=UTF-8
 Name=NV
 Comment=NV P2P Cryptocurrency
-Comment[fr]=NV, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=NV, eşten eşe kriptografik sanal para birimi
 Exec=nv-qt %u
 Terminal=false
 Type=Application
 Icon=nv128
 MimeType=x-scheme-handler/nv;
 Categories=Office;Finance;
+Name[en_US]=nv-qt.desktop
